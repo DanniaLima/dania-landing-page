@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="it" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dania — Codice, caffè e benessere</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Ciao, sono Dania: brasiliana a Negrar, sviluppatrice in formazione e appassionata di benessere. Scopri le mie raccomandazioni quotidiane."
+    />
+    <meta name="author" content="Dania" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#14251d" />
+
+    <!-- Substitua pelo endereço definitivo da página antes de publicar. -->
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:site_name" content="Dania" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dania — Codice, caffè e benessere" />
+    <meta
+      property="og:description"
+      content="Ciao, sono Dania: brasiliana a Negrar, sviluppatrice in formazione e appassionata di benessere. Scopri le mie raccomandazioni quotidiane."
+    />
+
+    <!--
+    PUBLICAÇÃO:
+    Substitua as URLs de exemplo pelo domínio e pela imagem reais.
+    Prepare uma imagem de compartilhamento com 1200 × 630 pixels.
+    Se usar outro tamanho, ajuste width e height abaixo.
+    A imagem precisa estar disponível publicamente no endereço informado.
+  -->
+    <meta property="og:url" content="https://example.com/" />
+    <meta
+      property="og:image"
+      content="https://example.com/images/dania-social.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dania — Codice, caffè e benessere" />
+
+    <!-- Conexões antecipadas com os CDNs utilizados -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <!--
+    Preserve esta ordem:
+    1. Tailwind Play CDN
+    2. Configuração personalizada
+
+    A configuração depende do objeto global criado pelo CDN.
+  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+
+    <!-- FontAwesome: carregado como CSS, não como JavaScript -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="font-sans text-ink antialiased">
+    <a
+      href="#contenuto"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-forest focus:px-5 focus:py-3 focus:text-white"
+    >
+      Vai al contenuto
+    </a>
+
+    <!-- Navegação -->
+    <header class="border-b border-forest/10 bg-cream">
+      <nav
+        aria-label="Navigazione principale"
+        class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-6 lg:px-8"
+      >
+        <a
+          href="#inizio"
+          aria-label="Dania, torna all'inizio"
+          class="flex items-center gap-2 text-xl font-bold tracking-tight"
+        >
+          <span
+            aria-hidden="true"
+            class="flex h-9 w-9 items-center justify-center rounded-xl bg-forest text-sm text-white"
+          >
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+          </span>
+          dania<span class="-ml-2 text-leaf">.</span>
+        </a>
+
+        <div class="flex items-center gap-5 text-sm font-medium sm:gap-8">
+          <a href="#chi-sono" class="transition-colors hover:text-leaf">
+            Chi sono
+          </a>
+
+          <a
+            href="#raccomandazioni"
+            class="inline-flex items-center gap-2 transition-colors hover:text-leaf"
+          >
+            I miei preferiti
+            <i
+              class="fa-solid fa-arrow-up-right-from-square text-xs"
+              aria-hidden="true"
+            ></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenuto" tabindex="-1">
+      <!-- Hero -->
+      <section
+        id="inizio"
+        aria-labelledby="hero-title"
+        class="hero-background relative isolate overflow-hidden px-6 pb-20 pt-20 sm:pb-28 sm:pt-28 lg:px-8"
+      >
+        <div
+          aria-hidden="true"
+          class="dot-pattern pointer-events-none absolute right-6 top-12 -z-10 h-36 w-36 opacity-20 sm:right-20"
+        ></div>
+
+        <div class="mx-auto max-w-4xl text-center">
+          <div
+            class="mb-8 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-forest/10 bg-white/80 px-4 py-2 text-xs font-medium text-leaf sm:text-sm"
+          >
+            <span aria-hidden="true">🇧🇷</span>
+            <span>Radici brasiliane</span>
+            <span aria-hidden="true" class="mx-1 text-leaf/40">/</span>
+            <span aria-hidden="true">🇮🇹</span>
+            <span>Negrar, Italia</span>
+          </div>
+
+          <h1
+            id="hero-title"
+            class="text-4xl font-bold leading-tight tracking-tight text-forest sm:text-6xl lg:text-7xl"
+          >
+            Ciao, sono Dania!
+            <span class="inline-block" role="img" aria-label="Un saluto">
+              👋
+            </span>
+          </h1>
+
+          <p
+            class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink/75 sm:text-xl"
+          >
+            Sviluppatrice in formazione, brasiliana in Italia e appassionata di
+            benessere.
+          </p>
+
+          <p class="mt-5 font-mono text-xs text-leaf sm:text-sm">
+            &lt; più equilibrio, una riga alla volta /&gt;
+          </p>
+
+          <a
+            href="#raccomandazioni"
+            class="mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-forest px-7 py-4 text-sm font-semibold text-white shadow-soft transition duration-300 hover:-translate-y-1 hover:bg-leaf"
+          >
+            Scopri i miei preferiti
+            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+          </a>
+
+          <div
+            class="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-ink/65 sm:text-sm"
+          >
+            <span class="inline-flex items-center gap-2">
+              <i class="fa-solid fa-code text-leaf" aria-hidden="true"></i>
+              Junior developer
+            </span>
+
+            <span class="inline-flex items-center gap-2">
+              <i class="fa-solid fa-mug-hot text-leaf" aria-hidden="true"></i>
+              Coffee lover
+            </span>
+
+            <span class="inline-flex items-center gap-2">
+              <i class="fa-solid fa-seedling text-leaf" aria-hidden="true"></i>
+              Work in progress
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chi Sono -->
+      <section
+        id="chi-sono"
+        aria-labelledby="about-title"
+        class="scroll-mt-8 px-6 py-16 sm:py-24 lg:px-8"
+      >
+        <div
+          class="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.8fr_1.2fr] md:gap-16"
+        >
+          <div>
+            <span
+              class="font-mono text-xs font-medium uppercase tracking-widest text-leaf"
+            >
+              01 / Dietro lo schermo
+            </span>
+
+            <h2
+              id="about-title"
+              class="mt-4 text-3xl font-bold tracking-tight text-forest sm:text-4xl"
+            >
+              Chi sono
+            </h2>
+
+            <p class="mt-4 max-w-sm text-lg leading-relaxed text-ink/70">
+              Un po’ di codice.<br />
+              Un po’ di caffè.<br />
+              Un po’ più di cura per me.
+            </p>
+
+            <div
+              aria-hidden="true"
+              class="mt-7 inline-flex items-center gap-3 rounded-2xl border border-forest/10 bg-white px-5 py-4 font-mono text-sm shadow-soft"
+            >
+              <span class="text-leaf">const</span>
+              <span>priorità =</span>
+              <span class="rounded-md bg-sage px-2 py-1 text-leaf">
+                "stare bene";
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="rounded-3xl border border-forest/10 bg-white p-7 shadow-soft sm:p-10"
+          >
+            <div
+              aria-hidden="true"
+              class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-sage text-xl text-leaf"
+            >
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </div>
+
+            <p class="text-base leading-8 text-ink/80 sm:text-lg">
+              Passo le mie giornate tra VS Code, la macchina del caffè e
+              cercando di capire perché il codice non funziona al primo colpo.
+              Ma ultimamente ho capito che, per continuare a programmare a
+              lungo, devo prendermi cura del mio corpo.
+              <strong class="font-semibold text-forest">
+                Sto entrando nei miei anni migliori e ho deciso di iniziare a
+                prendermi cura di me.
+              </strong>
+            </p>
+
+            <div
+              class="mt-7 flex items-center gap-3 border-t border-forest/10 pt-6"
+            >
+              <span
+                aria-hidden="true"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-forest font-semibold text-white"
+              >
+                D
+              </span>
+
+              <div>
+                <p class="text-sm font-semibold text-forest">Dania</p>
+                <p class="text-xs text-ink/65">
+                  Imparo, provo, cresco. Ogni giorno.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recomendações -->
+      <section
+        id="raccomandazioni"
+        aria-labelledby="recommendations-title"
+        class="scroll-mt-8 border-y border-forest/10 bg-sage/45 px-6 py-16 sm:py-24 lg:px-8"
+      >
+        <div class="mx-auto max-w-6xl">
+          <div class="mx-auto mb-12 max-w-2xl text-center">
+            <span
+              class="font-mono text-xs font-medium uppercase tracking-widest text-leaf"
+            >
+              02 / Piccole abitudini, ogni giorno
+            </span>
+
+            <h2
+              id="recommendations-title"
+              class="mt-4 text-3xl font-bold tracking-tight text-forest sm:text-4xl"
+            >
+              Le mie raccomandazioni
+            </h2>
+
+            <p class="mt-5 text-base leading-7 text-ink/75 sm:text-lg">
+              Qui sotto trovi i prodotti che uso ogni giorno e che mi aiutano a
+              mantenere energia ed equilibrio tra una compilazione e l'altra.
+              Sono prodotti in cui credo davvero.
+            </p>
+          </div>
+
+          <!--
+          CARDS PRONTOS PARA PERSONALIZAR:
+
+          Os links estão sem href enquanto são placeholders.
+          Isso evita navegação indesejada sem usar JavaScript inline.
+
+          Para ativar cada link:
+          1. Adicione href com a URL real.
+          2. Remova aria-disabled, role e tabindex.
+          3. Para links de afiliados, adicione rel="sponsored".
+          4. Se usar target="_blank", utilize:
+             rel="sponsored noopener noreferrer".
+          5. Substitua os placeholders visuais por imagens reais,
+             com alt adequado, width, height e loading="lazy".
+        -->
+          <div class="grid gap-6 md:grid-cols-3">
+            <article
+              class="group flex h-full flex-col rounded-3xl border border-forest/10 bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-leaf/40 sm:p-7"
+            >
+              <!-- Placeholder visual do produto -->
+              <div
+                aria-hidden="true"
+                class="mb-7 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-sage/70"
+              >
+                <i
+                  class="fa-solid fa-capsules text-5xl text-leaf/80 transition-transform duration-300 group-hover:scale-110"
+                  aria-hidden="true"
+                ></i>
+              </div>
+
+              <span class="font-mono text-xs text-leaf">
+                01 / La mia selezione
+              </span>
+
+              <h3
+                class="mb-7 mt-3 text-xl font-semibold tracking-tight text-forest"
+              >
+                Vitamine e Integratori
+              </h3>
+
+              <!-- Espaço para descrição ou detalhes do produto -->
+
+              <a
+                role="link"
+                aria-disabled="true"
+                tabindex="0"
+                aria-label="Scopri di più: Vitamine e Integratori"
+                class="mt-auto inline-flex items-center justify-between gap-3 rounded-xl bg-forest px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-leaf"
+              >
+                Scopri di più
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article
+              class="group flex h-full flex-col rounded-3xl border border-forest/10 bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-leaf/40 sm:p-7"
+            >
+              <!-- Placeholder visual do produto -->
+              <div
+                aria-hidden="true"
+                class="mb-7 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-[#eef0e7]"
+              >
+                <i
+                  class="fa-solid fa-seedling text-5xl text-leaf/80 transition-transform duration-300 group-hover:scale-110"
+                  aria-hidden="true"
+                ></i>
+              </div>
+
+              <span class="font-mono text-xs text-leaf">
+                02 / La mia selezione
+              </span>
+
+              <h3
+                class="mb-7 mt-3 text-xl font-semibold tracking-tight text-forest"
+              >
+                Benessere Quotidiano
+              </h3>
+
+              <!-- Espaço para descrição ou detalhes do produto -->
+
+              <a
+                role="link"
+                aria-disabled="true"
+                tabindex="0"
+                aria-label="Scopri di più: Benessere Quotidiano"
+                class="mt-auto inline-flex items-center justify-between gap-3 rounded-xl bg-forest px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-leaf"
+              >
+                Scopri di più
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article
+              class="group flex h-full flex-col rounded-3xl border border-forest/10 bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-leaf/40 sm:p-7"
+            >
+              <!-- Placeholder visual do produto -->
+              <div
+                aria-hidden="true"
+                class="mb-7 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-[#e8eeeb]"
+              >
+                <i
+                  class="fa-solid fa-pump-soap text-5xl text-leaf/80 transition-transform duration-300 group-hover:scale-110"
+                  aria-hidden="true"
+                ></i>
+              </div>
+
+              <span class="font-mono text-xs text-leaf">
+                03 / La mia selezione
+              </span>
+
+              <h3
+                class="mb-7 mt-3 text-xl font-semibold tracking-tight text-forest"
+              >
+                Cura della Persona
+              </h3>
+
+              <!-- Espaço para descrição ou detalhes do produto -->
+
+              <a
+                role="link"
+                aria-disabled="true"
+                tabindex="0"
+                aria-label="Scopri di più: Cura della Persona"
+                class="mt-auto inline-flex items-center justify-between gap-3 rounded-xl bg-forest px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-leaf"
+              >
+                Scopri di più
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+          </div>
+
+          <p
+            class="mt-8 flex items-center justify-center gap-2 text-center text-sm text-ink/65"
+          >
+            <i class="fa-regular fa-heart text-leaf" aria-hidden="true"></i>
+            Scelte personali, condivise con sincerità.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-forest px-6 py-12 text-white lg:px-8">
+      <div class="mx-auto max-w-6xl">
+        <div
+          class="flex flex-col justify-between gap-6 sm:flex-row sm:items-center"
+        >
+          <div>
+            <a
+              href="#inizio"
+              aria-label="Dania, torna all'inizio"
+              class="text-2xl font-bold tracking-tight"
+            >
+              dania<span class="text-[#b8d0ab]">.</span>
+            </a>
+
+            <p class="mt-2 text-sm text-white/70">
+              Fatto con cura, caffè e qualche riga di codice.
+            </p>
+          </div>
+
+          <a
+            href="#inizio"
+            class="inline-flex w-fit items-center gap-2 text-sm text-white/80 transition-colors hover:text-white"
+          >
+            Torna su
+            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="mt-8 border-t border-white/15 pt-7">
+          <p class="max-w-3xl text-sm leading-7 text-white/75">
+            Questo sito contiene link di affiliazione. Se acquisti tramite i
+            miei link, potrei ricevere una piccola commissione, senza alcun
+            costo aggiuntivo per te. Grazie per il supporto!
+          </p>
+
+          <p class="mt-5 font-mono text-xs text-white/55">
+            Da Negrar, con un cuore brasiliano.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

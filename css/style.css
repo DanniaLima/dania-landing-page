@@ -1,0 +1,65 @@
+/*
+ * Estilos personalizados.
+ * As classes utilitárias continuam sendo geradas pelo Tailwind CDN.
+ * Os valores visuais originais foram preservados.
+ */
+
+/* Seleção de texto */
+::selection {
+  background: #d7e5d3;
+  color: #14251d;
+}
+
+/* Fundo base */
+body {
+  background-color: #fafbf8;
+}
+
+/* Gradientes decorativos da seção Hero */
+.hero-background {
+  background-image:
+    radial-gradient(
+      ellipse at 15% 20%,
+      rgba(176, 202, 164, 0.22),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 85% 65%,
+      rgba(203, 220, 193, 0.28),
+      transparent 48%
+    );
+}
+
+/* Padrão decorativo de pontos */
+.dot-pattern {
+  background-image: radial-gradient(#407052 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Foco visível para navegação por teclado */
+a:focus-visible {
+  outline: 3px solid #407052;
+  outline-offset: 5px;
+}
+
+/*
+ * Preserva o cursor original dos links dos cards enquanto
+ * eles ainda não possuem uma URL.
+ */
+a[role="link"][aria-disabled="true"] {
+  cursor: pointer;
+}
+
+/* Respeita a preferência do usuário por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
