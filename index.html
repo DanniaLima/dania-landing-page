@@ -127,7 +127,7 @@
           class="dot-pattern pointer-events-none absolute right-6 top-12 -z-10 h-36 w-36 opacity-20 sm:right-20"
         ></div>
 
-        <div class="mx-auto max-w-4xl text-center">
+        <div class="mx-auto max-w-4xl text-center reveal">
           <div
             class="mb-8 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-forest/10 bg-white/80 px-4 py-2 text-xs font-medium text-leaf sm:text-sm"
           >
@@ -140,24 +140,22 @@
 
           <h1
             id="hero-title"
-            class="text-4xl font-bold leading-tight tracking-tight text-forest sm:text-6xl lg:text-7xl"
+            class="text-4xl font-bold leading-tight tracking-tight text-forest sm:text-6xl lg:text-7xl min-h-[3rem] sm:min-h-[5rem]"
           >
-            Ciao, sono Dannia Lima!
-            <span class="inline-block" role="img" aria-label="Un saluto">
-              👋
-            </span>
+            <span id="tw-part1"></span
+            ><span id="tw-part2" class="text-leaf"></span
+            ><span id="tw-part3" class="wave-emoji"></span>
           </h1>
 
           <p
-            class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink/75 sm:text-xl"
-          >
-            Sviluppatrice in formazione, brasiliana in Italia e appassionata di
-            benessere.
-          </p>
+            id="typewriter-subtitle"
+            class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink/75 sm:text-xl min-h-[3rem]"
+          ></p>
 
-          <p class="mt-5 font-mono text-xs text-leaf sm:text-sm">
-            &lt; più equilibrio, una riga alla volta /&gt;
-          </p>
+          <p
+            id="typewriter-code"
+            class="mt-5 font-mono text-xs text-leaf sm:text-sm min-h-[1.5rem]"
+          ></p>
 
           <a
             href="#raccomandazioni"
@@ -220,7 +218,7 @@
 
           <!-- Card integrado: história + GIF -->
           <div
-            class="grid items-center gap-8 rounded-3xl border border-forest/10 bg-white p-6 shadow-soft sm:p-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:p-10"
+            class="grid items-center gap-8 rounded-3xl border border-forest/10 bg-white p-6 shadow-soft sm:p-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:p-10 reveal"
           >
             <!-- História -->
             <div class="min-w-0">
@@ -359,7 +357,8 @@
           <div class="grid gap-6 md:grid-cols-3">
             <!-- Produto 1 -->
             <article
-              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl motion-reduce:transform-none"
+              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl motion-reduce:transform-none reveal"
+              style="transition-delay: 100ms"
             >
               <img
                 src="assets/produto1.jpg"
@@ -400,7 +399,8 @@
 
             <!-- Produto 2 -->
             <article
-              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl motion-reduce:transform-none"
+              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl motion-reduce:transform-none reveal"
+              style="transition-delay: 200ms"
             >
               <img
                 src="assets/produto2.jpg"
@@ -441,7 +441,8 @@
 
             <!-- Produto 3 -->
             <article
-              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl motion-reduce:transform-none"
+              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl motion-reduce:transform-none reveal"
+              style="transition-delay: 300ms"
             >
               <img
                 src="assets/produto3.jpg"
@@ -538,5 +539,9 @@
         </div>
       </div>
     </footer>
+    <!-- Script de Animações -->
+    <script src="js/animations.js"></script>
+    <!-- Script da Máquina de Escrever -->
+    <script src="js/typewriter.js"></script>
   </body>
 </html>
