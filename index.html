@@ -15,30 +15,37 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#14251d" />
 
-    <!-- Favicon: adicione o arquivo neste caminho -->
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
-    <!-- Substitua pelo endereço definitivo do site -->
+    <!--
+      ANTES DE PUBLICAR:
+      Substitua https://example.com/ pelo endereço real do site.
+    -->
     <link rel="canonical" href="https://example.com/" />
 
     <!-- Open Graph -->
     <meta property="og:locale" content="it_IT" />
     <meta property="og:site_name" content="Dannia Lima" />
     <meta property="og:type" content="website" />
+
     <meta
       property="og:title"
       content="Dannia Lima — Codice, caffè e benessere"
     />
+
     <meta
       property="og:description"
       content="Brasiliana in Italia, sviluppatrice in formazione e appassionata di benessere. Le mie scelte quotidiane, condivise con sincerità."
     />
+
     <meta property="og:url" content="https://example.com/" />
 
     <!--
-    Substitua a URL abaixo por uma imagem pública de compartilhamento.
-    Crie a imagem com 1200 × 630 pixels ou ajuste as dimensões informadas.
-  -->
+      Crie a imagem de compartilhamento com 1200 × 630 pixels.
+      Substitua a URL abaixo pelo endereço público da imagem.
+      Se usar outro tamanho, atualize width e height.
+    -->
     <meta
       property="og:image"
       content="https://example.com/assets/dannia-lima-social.jpg"
@@ -59,7 +66,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind-config.js"></script>
 
-    <!-- FontAwesome para os ícones de navegação e detalhes -->
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -70,6 +77,7 @@
   </head>
 
   <body class="font-sans text-ink antialiased">
+    <!-- Atalho de acessibilidade -->
     <a
       href="#contenuto"
       class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-forest focus:px-5 focus:py-3 focus:text-white"
@@ -95,7 +103,7 @@
             <i class="fa-solid fa-code"></i>
           </span>
 
-          <span>Dannia Lima<span class="text-leaf">.</span></span>
+          <span> Dannia Lima<span class="text-leaf">.</span> </span>
         </a>
 
         <div class="flex items-center gap-5 text-sm font-medium sm:gap-8">
@@ -166,11 +174,11 @@
 
           <a
             href="#raccomandazioni"
-            class="group mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-forest px-7 py-4 text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:bg-leaf hover:shadow-xl"
+            class="group mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-forest px-7 py-4 text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:bg-leaf hover:shadow-xl motion-reduce:transform-none"
           >
             Scopri i miei preferiti
             <i
-              class="fa-solid fa-arrow-down transition-transform duration-300 group-hover:translate-y-1"
+              class="fa-solid fa-arrow-down transition-transform duration-300 group-hover:translate-y-1 motion-reduce:transform-none"
               aria-hidden="true"
             ></i>
           </a>
@@ -203,9 +211,10 @@
         class="scroll-mt-8 px-6 py-16 sm:py-24 lg:px-8"
       >
         <div
-          class="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.8fr_1.2fr] md:gap-16"
+          class="mx-auto grid max-w-6xl items-start gap-10 md:grid-cols-[0.8fr_1.2fr] md:gap-16"
         >
-          <div>
+          <!-- Coluna esquerda: apresentação e GIF -->
+          <div class="min-w-0">
             <span
               class="font-mono text-xs font-medium uppercase tracking-widest text-leaf"
             >
@@ -225,9 +234,10 @@
               Un po’ più di cura per me.
             </p>
 
+            <!-- Detalhe decorativo de código -->
             <div
               aria-hidden="true"
-              class="mt-7 inline-flex items-center gap-3 rounded-2xl border border-forest/10 bg-white px-5 py-4 font-mono text-sm shadow-soft"
+              class="mt-7 inline-flex max-w-full flex-wrap items-center gap-3 rounded-2xl border border-forest/10 bg-white px-5 py-4 font-mono text-sm shadow-soft"
             >
               <span class="text-leaf">const</span>
               <span>priorità =</span>
@@ -235,27 +245,61 @@
                 "stare bene";
               </span>
             </div>
+
+            <!-- GIF -->
+            <figure class="mx-auto mt-8 w-full max-w-md md:mx-0">
+              <div
+                class="overflow-hidden rounded-2xl border border-forest/10 bg-forest p-2 shadow-soft"
+              >
+                <img
+                  src="assets/dannia-programando.gif"
+                  alt="Dannia Lima continua a programmare mentre piccole fiamme bruciano sulla scrivania e simboli di codice fluttuano dietro di lei."
+                  width="640"
+                  height="480"
+                  loading="lazy"
+                  decoding="async"
+                  class="block h-auto w-full rounded-xl motion-reduce:hidden"
+                />
+
+                <!-- Alternativa estática para movimento reduzido -->
+                <img
+                  src="assets/mascote.jpeg"
+                  alt="Avatar illustrato di Dannia Lima."
+                  loading="lazy"
+                  decoding="async"
+                  class="hidden aspect-[4/3] w-full rounded-xl object-cover object-top motion-reduce:block"
+                />
+              </div>
+
+              <figcaption
+                class="mt-3 text-center text-sm italic leading-relaxed text-ink/65"
+              >
+                Sto bruciando neuroni, ma il codice deve funzionare. 🔥
+              </figcaption>
+            </figure>
           </div>
 
+          <!-- Coluna direita: mascote e história -->
           <div
-            class="rounded-3xl border border-forest/10 bg-white p-7 shadow-soft sm:p-10"
+            class="min-w-0 rounded-3xl border border-forest/10 bg-white p-7 shadow-soft sm:p-10"
           >
-            <!-- Mascote -->
             <div
-              class="mb-7 flex flex-col items-center gap-4 text-center sm:flex-row sm:text-left"
+              class="mb-7 flex flex-col items-center gap-5 text-center sm:flex-row sm:text-left"
             >
+              <!-- Mascote em JPEG -->
               <img
-                src="/assets/mascote.png"
-                alt="La mascotte di Dannia Lima"
-                width="112"
-                height="112"
+                src="assets/mascote.jpeg"
+                alt="Avatar illustrato di Dannia Lima."
+                width="128"
+                height="128"
                 loading="lazy"
                 decoding="async"
-                class="h-28 w-28 shrink-0 rounded-full border-4 border-white bg-sage object-contain p-2 shadow-soft ring-1 ring-leaf/25 transition-all duration-300 hover:scale-105"
+                class="h-32 w-32 shrink-0 rounded-full border-4 border-white bg-sage object-cover object-top shadow-soft ring-1 ring-leaf/25 transition-all duration-300 hover:scale-105 motion-reduce:transform-none"
               />
 
-              <div>
+              <div class="min-w-0">
                 <p class="text-lg font-semibold text-forest">Dannia Lima</p>
+
                 <p class="mt-1 text-sm leading-relaxed text-ink/65">
                   Imparo, provo, cresco. Ogni giorno.
                 </p>
@@ -276,8 +320,8 @@
             <div
               class="mt-7 flex items-center gap-3 border-t border-forest/10 pt-6 text-sm text-leaf"
             >
-              <i class="fa-regular fa-heart" aria-hidden="true"></i>
-              <span>Più cura, più equilibrio. Un passo alla volta.</span>
+              <i class="fa-regular fa-heart shrink-0" aria-hidden="true"></i>
+              <span> Più cura, più equilibrio. Un passo alla volta. </span>
             </div>
           </div>
         </div>
@@ -312,23 +356,22 @@
           </div>
 
           <!--
-          ATIVAÇÃO DOS LINKS:
-          1. Adicione href com a URL real em cada botão.
-          2. Remova role, aria-disabled e tabindex.
-          3. Para links de afiliados, adicione rel="sponsored".
-          4. Se usar target="_blank", utilize:
-             rel="sponsored noopener noreferrer".
+            ATIVAÇÃO DOS LINKS:
+            1. Adicione href com a URL real em cada link.
+            2. Remova role, aria-disabled e tabindex.
+            3. Para links de afiliados, adicione rel="sponsored".
+            4. Se usar target="_blank", utilize:
+               rel="sponsored noopener noreferrer".
 
-          Atualize também o alt de cada imagem com o nome e a descrição
-          do produto fotografado quando os arquivos definitivos estiverem prontos.
-        -->
+            Atualize o alt das imagens com os produtos reais.
+          -->
           <div class="grid gap-6 md:grid-cols-3">
             <!-- Produto 1 -->
             <article
-              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl"
+              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl motion-reduce:transform-none"
             >
               <img
-                src="/assets/produto1.jpg"
+                src="assets/produto1.jpg"
                 alt="Prodotto della selezione Vitamine e Integratori"
                 width="800"
                 height="600"
@@ -348,8 +391,6 @@
                   Vitamine e Integratori
                 </h3>
 
-                <!-- Espaço para descrição do produto -->
-
                 <a
                   role="link"
                   aria-disabled="true"
@@ -359,7 +400,7 @@
                 >
                   Scopri di più
                   <i
-                    class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                    class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transform-none"
                     aria-hidden="true"
                   ></i>
                 </a>
@@ -368,10 +409,10 @@
 
             <!-- Produto 2 -->
             <article
-              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl"
+              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl motion-reduce:transform-none"
             >
               <img
-                src="/assets/produto2.jpg"
+                src="assets/produto2.jpg"
                 alt="Prodotto della selezione Benessere Quotidiano"
                 width="800"
                 height="600"
@@ -391,8 +432,6 @@
                   Benessere Quotidiano
                 </h3>
 
-                <!-- Espaço para descrição do produto -->
-
                 <a
                   role="link"
                   aria-disabled="true"
@@ -402,7 +441,7 @@
                 >
                   Scopri di più
                   <i
-                    class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                    class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transform-none"
                     aria-hidden="true"
                   ></i>
                 </a>
@@ -411,10 +450,10 @@
 
             <!-- Produto 3 -->
             <article
-              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl"
+              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl motion-reduce:transform-none"
             >
               <img
-                src="/assets/produto3.jpg"
+                src="assets/produto3.jpg"
                 alt="Prodotto della selezione Cura della Persona"
                 width="800"
                 height="600"
@@ -434,8 +473,6 @@
                   Cura della Persona
                 </h3>
 
-                <!-- Espaço para descrição do produto -->
-
                 <a
                   role="link"
                   aria-disabled="true"
@@ -445,7 +482,7 @@
                 >
                   Scopri di più
                   <i
-                    class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                    class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transform-none"
                     aria-hidden="true"
                   ></i>
                 </a>
@@ -489,7 +526,7 @@
           >
             Torna su
             <i
-              class="fa-solid fa-arrow-up transition-transform duration-300 group-hover:-translate-y-1"
+              class="fa-solid fa-arrow-up transition-transform duration-300 group-hover:-translate-y-1 motion-reduce:transform-none"
               aria-hidden="true"
             ></i>
           </a>

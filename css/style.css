@@ -1,49 +1,214 @@
 /*
- * Dannia Lima — Estilos personalizados
- * Paleta e fundos originais preservados.
+ * Dannia Lima — Identidade clara e acolhedora
+ *
+ * Azul conecta com o portfólio.
+ * Verde conecta com o bem-estar.
+ * Violeta aparece apenas nos esfumados.
  */
 
-/* Seleção de texto */
-::selection {
-  background: #d7e5d3;
-  color: #14251d;
+:root {
+  --page-background: #f8fafc;
+  --navy: #182d48;
+  --green: #28786b;
+  --focus-light: #a7e8d3;
 }
 
-/* Fundo base */
+/* Base */
 body {
-  background-color: #fafbf8;
+  background-color: var(--page-background);
 }
 
-/* Gradientes decorativos do Hero */
+::selection {
+  background: #d9e9ee;
+  color: var(--navy);
+}
+
+/* Navegação clara */
+header {
+  background-color: #ffffff;
+  border-bottom-color: rgba(24, 45, 72, 0.09);
+}
+
+/* Hero: iluminação suave em azul e verde */
 .hero-background {
+  background-color: var(--page-background);
+
   background-image:
     radial-gradient(
-      ellipse at 15% 20%,
-      rgba(176, 202, 164, 0.22),
+      ellipse at 12% 18%,
+      rgba(76, 156, 219, 0.19),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 90% 28%,
+      rgba(143, 117, 197, 0.1),
       transparent 50%
     ),
     radial-gradient(
-      ellipse at 85% 65%,
-      rgba(203, 220, 193, 0.28),
-      transparent 48%
+      ellipse at 60% 100%,
+      rgba(97, 179, 143, 0.17),
+      transparent 58%
     );
 }
 
-/* Padrão decorativo de pontos */
+/* Detalhe tech, sem neon */
 .dot-pattern {
-  background-image: radial-gradient(#407052 1px, transparent 1px);
+  background-image: radial-gradient(#5f88ad 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
-/* Foco visível para navegação por teclado */
+/* Chi sono: o fundo continua claro */
+#chi-sono {
+  background-color: var(--page-background);
+
+  background-image:
+    radial-gradient(
+      ellipse at 0% 65%,
+      rgba(96, 160, 213, 0.13),
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 100% 20%,
+      rgba(147, 119, 198, 0.09),
+      transparent 45%
+    );
+}
+
+/*
+ * Card da história.
+ * Este seletor funciona com seu HTML atual,
+ * mesmo sem a classe extra "about-card".
+ */
+#chi-sono > div > div:last-child {
+  border: 1px solid transparent;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fbfcff
+    ) padding-box,
+    linear-gradient(
+      135deg,
+      rgba(91, 155, 205, 0.3),
+      rgba(146, 123, 193, 0.18),
+      rgba(88, 160, 128, 0.26)
+    ) border-box;
+
+  box-shadow:
+    0 22px 55px -32px rgba(39, 69, 110, 0.26);
+}
+
+/* Halo discreto no avatar circular */
+#chi-sono img.rounded-full {
+  box-shadow:
+    0 0 0 6px rgba(93, 157, 205, 0.06),
+    0 12px 28px -14px rgba(49, 99, 151, 0.35);
+}
+
+/* Caixinha decorativa de código */
+#chi-sono div[aria-hidden="true"].font-mono {
+  background:
+    linear-gradient(
+      130deg,
+      #ffffff,
+      #f0f7f6
+    );
+
+  border-color: rgba(64, 125, 137, 0.16);
+}
+
+/* Moldura do GIF: conexão entre azul e verde */
+#chi-sono figure > div {
+  background:
+    linear-gradient(
+      135deg,
+      #244668,
+      #315f61
+    );
+
+  border-color: rgba(53, 101, 141, 0.22);
+
+  box-shadow:
+    0 18px 42px -24px rgba(35, 74, 115, 0.32);
+}
+
+/* Recomendações: verde mais presente nesta seção */
+#raccomandazioni {
+  background-color: #edf5f1;
+
+  background-image:
+    radial-gradient(
+      ellipse at 5% 15%,
+      rgba(100, 168, 206, 0.1),
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 95% 85%,
+      rgba(105, 178, 139, 0.12),
+      transparent 48%
+    );
+
+  border-color: rgba(48, 102, 83, 0.1);
+}
+
+/* Cards dos produtos permanecem brancos */
+.recommendation-card {
+  background-color: #ffffff;
+  border-color: rgba(60, 97, 130, 0.13);
+
+  box-shadow:
+    0 16px 38px -25px rgba(35, 73, 105, 0.23);
+}
+
+.recommendation-card:focus-within {
+  border-color: rgba(40, 120, 107, 0.5);
+}
+
+/*
+ * Botões:
+ * azul para verde, sem brilho neon.
+ */
+.hero-background a.bg-forest,
+.recommendation-card a.bg-forest {
+  background-color: var(--navy);
+
+  background-image:
+    linear-gradient(
+      115deg,
+      #24588b,
+      #28786b
+    );
+
+  box-shadow:
+    0 10px 22px -15px rgba(36, 88, 139, 0.5);
+}
+
+/* Footer: único bloco amplamente escuro */
+footer {
+  background-color: var(--navy);
+
+  background-image:
+    radial-gradient(
+      ellipse at 0% 0%,
+      rgba(61, 124, 187, 0.2),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 100% 100%,
+      rgba(61, 141, 111, 0.17),
+      transparent 60%
+    );
+}
+
+/* Navegação por teclado */
 a:focus-visible {
-  outline: 3px solid #407052;
+  outline: 3px solid var(--green);
   outline-offset: 5px;
 }
 
-/* Foco com contraste apropriado no footer escuro */
 footer a:focus-visible {
-  outline-color: #b8d0ab;
+  outline-color: var(--focus-light);
 }
 
 /* Links ainda não configurados */
@@ -51,22 +216,34 @@ a[role="link"][aria-disabled="true"] {
   cursor: not-allowed;
 }
 
-/* Destaque do card também durante navegação por teclado */
-.recommendation-card:focus-within {
-  border-color: rgba(64, 112, 82, 0.4);
+/* Interações em dispositivos com hover */
+@media (hover: hover) {
+  .hero-background a.bg-forest:hover,
+  .recommendation-card a.bg-forest:hover {
+    background-image:
+      linear-gradient(
+        115deg,
+        #286398,
+        #2b8273
+      );
+  }
+
+  .recommendation-card:hover {
+    border-color: rgba(57, 125, 151, 0.35);
+
+    box-shadow:
+      0 24px 48px -28px rgba(35, 84, 121, 0.33);
+  }
 }
 
-/*
- * Evita ampliação persistente dos cards em dispositivos
- * cujo mecanismo principal de interação não possui hover.
- */
+/* Evita ampliação persistente em dispositivos sem hover */
 @media (hover: none) {
   .recommendation-card:hover {
     transform: none;
   }
 }
 
-/* Acessibilidade: preferência por movimento reduzido */
+/* Preferência por movimento reduzido */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto !important;
