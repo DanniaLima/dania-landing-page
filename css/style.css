@@ -1,7 +1,6 @@
 /*
- * Estilos personalizados.
- * As classes utilitárias continuam sendo geradas pelo Tailwind CDN.
- * Os valores visuais originais foram preservados.
+ * Dannia Lima — Estilos personalizados
+ * Paleta e fundos originais preservados.
  */
 
 /* Seleção de texto */
@@ -15,7 +14,7 @@ body {
   background-color: #fafbf8;
 }
 
-/* Gradientes decorativos da seção Hero */
+/* Gradientes decorativos do Hero */
 .hero-background {
   background-image:
     radial-gradient(
@@ -42,15 +41,32 @@ a:focus-visible {
   outline-offset: 5px;
 }
 
-/*
- * Preserva o cursor original dos links dos cards enquanto
- * eles ainda não possuem uma URL.
- */
-a[role="link"][aria-disabled="true"] {
-  cursor: pointer;
+/* Foco com contraste apropriado no footer escuro */
+footer a:focus-visible {
+  outline-color: #b8d0ab;
 }
 
-/* Respeita a preferência do usuário por movimento reduzido */
+/* Links ainda não configurados */
+a[role="link"][aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+/* Destaque do card também durante navegação por teclado */
+.recommendation-card:focus-within {
+  border-color: rgba(64, 112, 82, 0.4);
+}
+
+/*
+ * Evita ampliação persistente dos cards em dispositivos
+ * cujo mecanismo principal de interação não possui hover.
+ */
+@media (hover: none) {
+  .recommendation-card:hover {
+    transform: none;
+  }
+}
+
+/* Acessibilidade: preferência por movimento reduzido */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto !important;
@@ -61,5 +77,12 @@ a[role="link"][aria-disabled="true"] {
   *::after {
     transition: none !important;
     animation: none !important;
+  }
+
+  .recommendation-card:hover,
+  .hero-background a:hover,
+  #chi-sono img:hover,
+  .group:hover i {
+    transform: none !important;
   }
 }

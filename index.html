@@ -4,68 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Dania — Codice, caffè e benessere</title>
+    <title>Dannia Lima — Codice, caffè e benessere</title>
 
     <!-- SEO -->
     <meta
       name="description"
-      content="Ciao, sono Dania: brasiliana a Negrar, sviluppatrice in formazione e appassionata di benessere. Scopri le mie raccomandazioni quotidiane."
+      content="Ciao, sono Dannia Lima: brasiliana in Italia, sviluppatrice in formazione e appassionata di benessere. Scopri le mie raccomandazioni quotidiane."
     />
-    <meta name="author" content="Dania" />
+    <meta name="author" content="Dannia Lima" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#14251d" />
 
-    <!-- Substitua pelo endereço definitivo da página antes de publicar. -->
+    <!-- Favicon: adicione o arquivo neste caminho -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Substitua pelo endereço definitivo do site -->
     <link rel="canonical" href="https://example.com/" />
 
     <!-- Open Graph -->
     <meta property="og:locale" content="it_IT" />
-    <meta property="og:site_name" content="Dania" />
+    <meta property="og:site_name" content="Dannia Lima" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Dania — Codice, caffè e benessere" />
+    <meta
+      property="og:title"
+      content="Dannia Lima — Codice, caffè e benessere"
+    />
     <meta
       property="og:description"
-      content="Ciao, sono Dania: brasiliana a Negrar, sviluppatrice in formazione e appassionata di benessere. Scopri le mie raccomandazioni quotidiane."
+      content="Brasiliana in Italia, sviluppatrice in formazione e appassionata di benessere. Le mie scelte quotidiane, condivise con sincerità."
     />
+    <meta property="og:url" content="https://example.com/" />
 
     <!--
-    PUBLICAÇÃO:
-    Substitua as URLs de exemplo pelo domínio e pela imagem reais.
-    Prepare uma imagem de compartilhamento com 1200 × 630 pixels.
-    Se usar outro tamanho, ajuste width e height abaixo.
-    A imagem precisa estar disponível publicamente no endereço informado.
+    Substitua a URL abaixo por uma imagem pública de compartilhamento.
+    Crie a imagem com 1200 × 630 pixels ou ajuste as dimensões informadas.
   -->
-    <meta property="og:url" content="https://example.com/" />
     <meta
       property="og:image"
-      content="https://example.com/images/dania-social.jpg"
+      content="https://example.com/assets/dannia-lima-social.jpg"
     />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Dania — Codice, caffè e benessere" />
+    <meta
+      property="og:image:alt"
+      content="Dannia Lima — Codice, caffè e benessere"
+    />
 
-    <!-- Conexões antecipadas com os CDNs utilizados -->
+    <!-- Conexões com os CDNs -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
-    <!--
-    Preserve esta ordem:
-    1. Tailwind Play CDN
-    2. Configuração personalizada
-
-    A configuração depende do objeto global criado pelo CDN.
-  -->
+    <!-- Preserve a ordem: Tailwind primeiro, configuração depois -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind-config.js"></script>
 
-    <!-- FontAwesome: carregado como CSS, não como JavaScript -->
+    <!-- FontAwesome para os ícones de navegação e detalhes -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
 
-    <!-- Estilos personalizados -->
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -85,26 +85,30 @@
       >
         <a
           href="#inizio"
-          aria-label="Dania, torna all'inizio"
+          aria-label="Dannia Lima, torna all'inizio"
           class="flex items-center gap-2 text-xl font-bold tracking-tight"
         >
           <span
             aria-hidden="true"
-            class="flex h-9 w-9 items-center justify-center rounded-xl bg-forest text-sm text-white"
+            class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-forest text-sm text-white"
           >
-            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <i class="fa-solid fa-code"></i>
           </span>
-          dania<span class="-ml-2 text-leaf">.</span>
+
+          <span>Dannia Lima<span class="text-leaf">.</span></span>
         </a>
 
         <div class="flex items-center gap-5 text-sm font-medium sm:gap-8">
-          <a href="#chi-sono" class="transition-colors hover:text-leaf">
+          <a
+            href="#chi-sono"
+            class="transition-colors duration-300 hover:text-leaf"
+          >
             Chi sono
           </a>
 
           <a
             href="#raccomandazioni"
-            class="inline-flex items-center gap-2 transition-colors hover:text-leaf"
+            class="inline-flex items-center gap-2 transition-colors duration-300 hover:text-leaf"
           >
             I miei preferiti
             <i
@@ -136,14 +140,14 @@
             <span>Radici brasiliane</span>
             <span aria-hidden="true" class="mx-1 text-leaf/40">/</span>
             <span aria-hidden="true">🇮🇹</span>
-            <span>Negrar, Italia</span>
+            <span>Italia</span>
           </div>
 
           <h1
             id="hero-title"
             class="text-4xl font-bold leading-tight tracking-tight text-forest sm:text-6xl lg:text-7xl"
           >
-            Ciao, sono Dania!
+            Ciao, sono Dannia Lima!
             <span class="inline-block" role="img" aria-label="Un saluto">
               👋
             </span>
@@ -162,10 +166,13 @@
 
           <a
             href="#raccomandazioni"
-            class="mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-forest px-7 py-4 text-sm font-semibold text-white shadow-soft transition duration-300 hover:-translate-y-1 hover:bg-leaf"
+            class="group mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-forest px-7 py-4 text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:bg-leaf hover:shadow-xl"
           >
             Scopri i miei preferiti
-            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            <i
+              class="fa-solid fa-arrow-down transition-transform duration-300 group-hover:translate-y-1"
+              aria-hidden="true"
+            ></i>
           </a>
 
           <div
@@ -233,11 +240,26 @@
           <div
             class="rounded-3xl border border-forest/10 bg-white p-7 shadow-soft sm:p-10"
           >
+            <!-- Mascote -->
             <div
-              aria-hidden="true"
-              class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-sage text-xl text-leaf"
+              class="mb-7 flex flex-col items-center gap-4 text-center sm:flex-row sm:text-left"
             >
-              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+              <img
+                src="/assets/mascote.png"
+                alt="La mascotte di Dannia Lima"
+                width="112"
+                height="112"
+                loading="lazy"
+                decoding="async"
+                class="h-28 w-28 shrink-0 rounded-full border-4 border-white bg-sage object-contain p-2 shadow-soft ring-1 ring-leaf/25 transition-all duration-300 hover:scale-105"
+              />
+
+              <div>
+                <p class="text-lg font-semibold text-forest">Dannia Lima</p>
+                <p class="mt-1 text-sm leading-relaxed text-ink/65">
+                  Imparo, provo, cresco. Ogni giorno.
+                </p>
+              </div>
             </div>
 
             <p class="text-base leading-8 text-ink/80 sm:text-lg">
@@ -252,21 +274,10 @@
             </p>
 
             <div
-              class="mt-7 flex items-center gap-3 border-t border-forest/10 pt-6"
+              class="mt-7 flex items-center gap-3 border-t border-forest/10 pt-6 text-sm text-leaf"
             >
-              <span
-                aria-hidden="true"
-                class="flex h-10 w-10 items-center justify-center rounded-full bg-forest font-semibold text-white"
-              >
-                D
-              </span>
-
-              <div>
-                <p class="text-sm font-semibold text-forest">Dania</p>
-                <p class="text-xs text-ink/65">
-                  Imparo, provo, cresco. Ogni giorno.
-                </p>
-              </div>
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+              <span>Più cura, più equilibrio. Un passo alla volta.</span>
             </div>
           </div>
         </div>
@@ -301,133 +312,144 @@
           </div>
 
           <!--
-          CARDS PRONTOS PARA PERSONALIZAR:
-
-          Os links estão sem href enquanto são placeholders.
-          Isso evita navegação indesejada sem usar JavaScript inline.
-
-          Para ativar cada link:
-          1. Adicione href com a URL real.
-          2. Remova aria-disabled, role e tabindex.
+          ATIVAÇÃO DOS LINKS:
+          1. Adicione href com a URL real em cada botão.
+          2. Remova role, aria-disabled e tabindex.
           3. Para links de afiliados, adicione rel="sponsored".
           4. Se usar target="_blank", utilize:
              rel="sponsored noopener noreferrer".
-          5. Substitua os placeholders visuais por imagens reais,
-             com alt adequado, width, height e loading="lazy".
+
+          Atualize também o alt de cada imagem com o nome e a descrição
+          do produto fotografado quando os arquivos definitivos estiverem prontos.
         -->
           <div class="grid gap-6 md:grid-cols-3">
+            <!-- Produto 1 -->
             <article
-              class="group flex h-full flex-col rounded-3xl border border-forest/10 bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-leaf/40 sm:p-7"
+              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl"
             >
-              <!-- Placeholder visual do produto -->
-              <div
-                aria-hidden="true"
-                class="mb-7 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-sage/70"
-              >
-                <i
-                  class="fa-solid fa-capsules text-5xl text-leaf/80 transition-transform duration-300 group-hover:scale-110"
-                  aria-hidden="true"
-                ></i>
+              <img
+                src="/assets/produto1.jpg"
+                alt="Prodotto della selezione Vitamine e Integratori"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+                class="block h-48 w-full rounded-t-2xl bg-sage/70 object-cover"
+              />
+
+              <div class="flex flex-1 flex-col p-6 sm:p-7">
+                <span class="font-mono text-xs text-leaf">
+                  01 / La mia selezione
+                </span>
+
+                <h3
+                  class="mb-7 mt-3 text-xl font-semibold tracking-tight text-forest"
+                >
+                  Vitamine e Integratori
+                </h3>
+
+                <!-- Espaço para descrição do produto -->
+
+                <a
+                  role="link"
+                  aria-disabled="true"
+                  tabindex="0"
+                  aria-label="Scopri di più: Vitamine e Integratori"
+                  class="mt-auto inline-flex items-center justify-between gap-3 rounded-xl bg-forest px-5 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-leaf"
+                >
+                  Scopri di più
+                  <i
+                    class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                    aria-hidden="true"
+                  ></i>
+                </a>
               </div>
-
-              <span class="font-mono text-xs text-leaf">
-                01 / La mia selezione
-              </span>
-
-              <h3
-                class="mb-7 mt-3 text-xl font-semibold tracking-tight text-forest"
-              >
-                Vitamine e Integratori
-              </h3>
-
-              <!-- Espaço para descrição ou detalhes do produto -->
-
-              <a
-                role="link"
-                aria-disabled="true"
-                tabindex="0"
-                aria-label="Scopri di più: Vitamine e Integratori"
-                class="mt-auto inline-flex items-center justify-between gap-3 rounded-xl bg-forest px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-leaf"
-              >
-                Scopri di più
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </a>
             </article>
 
+            <!-- Produto 2 -->
             <article
-              class="group flex h-full flex-col rounded-3xl border border-forest/10 bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-leaf/40 sm:p-7"
+              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl"
             >
-              <!-- Placeholder visual do produto -->
-              <div
-                aria-hidden="true"
-                class="mb-7 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-[#eef0e7]"
-              >
-                <i
-                  class="fa-solid fa-seedling text-5xl text-leaf/80 transition-transform duration-300 group-hover:scale-110"
-                  aria-hidden="true"
-                ></i>
+              <img
+                src="/assets/produto2.jpg"
+                alt="Prodotto della selezione Benessere Quotidiano"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+                class="block h-48 w-full rounded-t-2xl bg-[#eef0e7] object-cover"
+              />
+
+              <div class="flex flex-1 flex-col p-6 sm:p-7">
+                <span class="font-mono text-xs text-leaf">
+                  02 / La mia selezione
+                </span>
+
+                <h3
+                  class="mb-7 mt-3 text-xl font-semibold tracking-tight text-forest"
+                >
+                  Benessere Quotidiano
+                </h3>
+
+                <!-- Espaço para descrição do produto -->
+
+                <a
+                  role="link"
+                  aria-disabled="true"
+                  tabindex="0"
+                  aria-label="Scopri di più: Benessere Quotidiano"
+                  class="mt-auto inline-flex items-center justify-between gap-3 rounded-xl bg-forest px-5 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-leaf"
+                >
+                  Scopri di più
+                  <i
+                    class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                    aria-hidden="true"
+                  ></i>
+                </a>
               </div>
-
-              <span class="font-mono text-xs text-leaf">
-                02 / La mia selezione
-              </span>
-
-              <h3
-                class="mb-7 mt-3 text-xl font-semibold tracking-tight text-forest"
-              >
-                Benessere Quotidiano
-              </h3>
-
-              <!-- Espaço para descrição ou detalhes do produto -->
-
-              <a
-                role="link"
-                aria-disabled="true"
-                tabindex="0"
-                aria-label="Scopri di più: Benessere Quotidiano"
-                class="mt-auto inline-flex items-center justify-between gap-3 rounded-xl bg-forest px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-leaf"
-              >
-                Scopri di più
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </a>
             </article>
 
+            <!-- Produto 3 -->
             <article
-              class="group flex h-full flex-col rounded-3xl border border-forest/10 bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-leaf/40 sm:p-7"
+              class="recommendation-card group relative flex h-full flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:border-leaf/40 hover:shadow-xl"
             >
-              <!-- Placeholder visual do produto -->
-              <div
-                aria-hidden="true"
-                class="mb-7 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-[#e8eeeb]"
-              >
-                <i
-                  class="fa-solid fa-pump-soap text-5xl text-leaf/80 transition-transform duration-300 group-hover:scale-110"
-                  aria-hidden="true"
-                ></i>
+              <img
+                src="/assets/produto3.jpg"
+                alt="Prodotto della selezione Cura della Persona"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+                class="block h-48 w-full rounded-t-2xl bg-[#e8eeeb] object-cover"
+              />
+
+              <div class="flex flex-1 flex-col p-6 sm:p-7">
+                <span class="font-mono text-xs text-leaf">
+                  03 / La mia selezione
+                </span>
+
+                <h3
+                  class="mb-7 mt-3 text-xl font-semibold tracking-tight text-forest"
+                >
+                  Cura della Persona
+                </h3>
+
+                <!-- Espaço para descrição do produto -->
+
+                <a
+                  role="link"
+                  aria-disabled="true"
+                  tabindex="0"
+                  aria-label="Scopri di più: Cura della Persona"
+                  class="mt-auto inline-flex items-center justify-between gap-3 rounded-xl bg-forest px-5 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-leaf"
+                >
+                  Scopri di più
+                  <i
+                    class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                    aria-hidden="true"
+                  ></i>
+                </a>
               </div>
-
-              <span class="font-mono text-xs text-leaf">
-                03 / La mia selezione
-              </span>
-
-              <h3
-                class="mb-7 mt-3 text-xl font-semibold tracking-tight text-forest"
-              >
-                Cura della Persona
-              </h3>
-
-              <!-- Espaço para descrição ou detalhes do produto -->
-
-              <a
-                role="link"
-                aria-disabled="true"
-                tabindex="0"
-                aria-label="Scopri di più: Cura della Persona"
-                class="mt-auto inline-flex items-center justify-between gap-3 rounded-xl bg-forest px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-leaf"
-              >
-                Scopri di più
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </a>
             </article>
           </div>
 
@@ -450,10 +472,10 @@
           <div>
             <a
               href="#inizio"
-              aria-label="Dania, torna all'inizio"
+              aria-label="Dannia Lima, torna all'inizio"
               class="text-2xl font-bold tracking-tight"
             >
-              dania<span class="text-[#b8d0ab]">.</span>
+              Dannia Lima<span class="text-[#b8d0ab]">.</span>
             </a>
 
             <p class="mt-2 text-sm text-white/70">
@@ -463,10 +485,13 @@
 
           <a
             href="#inizio"
-            class="inline-flex w-fit items-center gap-2 text-sm text-white/80 transition-colors hover:text-white"
+            class="group inline-flex w-fit items-center gap-2 text-sm text-white/80 transition-all duration-300 hover:text-white"
           >
             Torna su
-            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+            <i
+              class="fa-solid fa-arrow-up transition-transform duration-300 group-hover:-translate-y-1"
+              aria-hidden="true"
+            ></i>
           </a>
         </div>
 
@@ -478,7 +503,7 @@
           </p>
 
           <p class="mt-5 font-mono text-xs text-white/55">
-            Da Negrar, con un cuore brasiliano.
+            Dall’Italia, con un cuore brasiliano.
           </p>
         </div>
       </div>

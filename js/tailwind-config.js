@@ -1,12 +1,12 @@
 "use strict";
 
 /*
- * Configuração do Tailwind Play CDN.
+ * Dannia Lima — Configuração do Tailwind Play CDN
  *
- * Este arquivo deve ser carregado depois de:
+ * Carregar depois do script:
  * https://cdn.tailwindcss.com
  *
- * As cores, fontes e sombras originais foram preservadas.
+ * Cores, fontes e sombra originais preservadas.
  */
 tailwind.config = {
   theme: {
