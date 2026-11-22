@@ -6,21 +6,21 @@
 >
   <title>Dannia Lima</title>
 
-  <!-- Azul-marinho da identidade -->
+  <!-- Novo azul escuro premium -->
   <rect
     width="64"
     height="64"
     rx="15"
-    fill="#182d48"
+    fill="#0b1020"
   />
 
-  <!-- Iniciais com destaque -->
+  <!-- Iniciais maiores e centralizadas -->
   <text
-    x="31"
-    y="43"
+    x="30"
+    y="47"
     text-anchor="middle"
     font-family="Arial, Helvetica, sans-serif"
-    font-size="33"
+    font-size="40"
     font-weight="700"
     letter-spacing="-1.5"
     fill="#f8fafc"
